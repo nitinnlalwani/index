@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+        h1{
+            color: white;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            height: 100%;
+            width: 100%;
+            background-color: crimson;
+        }
+        .ak{
+            display: flex;
+            
+            width: 50%;
+            background-color: orange;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        .formcontainer{
+            margin: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+            gap: 20px;
+        }
+        .f1{
+            display: flex;
+            flex-direction: column;
+        }
+        .f2{
+             display: flex;
+            justify-content: end;
+            border-radius: 2px;
+            padding: 3px;
+        }
+        span button{
+            padding: 5px;
+            border: 1px solid black;
+            border-radius: 3px;
+            color: white;
+            background-color: green;
+        }
+        span{
+            display: flex;
+            flex-direction: column;
+        }
+
+        input,textarea,select{
+            border: 1px solid black;
+            border-radius:5px;
+            font-size: 15px;
+            padding: 10px;
+            font-family: cursive;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="ak">
+        <form >
+           
+
+          <h1>Job Application Form</h1>
+          <div class="formcontainer">
+          <div class="f1">
+            <label for="Name">First Name</label>
+            <input
+              type="text"
+              name="Name"
+              id="Name"
+              placeholder="Enter First Name here"
+            />
+          </div>
+          <div class="f1">
+            <label for="Last">Last Name</label>
+            <input
+              type="text"
+              name="Name"
+              id="Last"
+              placeholder="Enter Last Name here"
+            />
+          </div>
+          <div class="f1">
+            <label for="Age">Age</label>
+            <input
+              type="number"
+              name="Name"
+              id="Age"
+              placeholder="Enter Current Age"
+            />
+          </div>
+          <div class="f1">
+            <label for="Email">@ E-mail</label>
+            <input
+              type="email"
+              name="Name"
+              id="Email"
+              placeholder="Put E-mail here"
+            />
+          </div>
+          <div class="f3">
+            <label for="Address">Address </label>
+            <textarea
+              name="add"
+              id="Address"
+              cols="60"
+              rows="3"
+              placeholder="Enter Your Residential Address"
+            ></textarea>
+          </div>
+          <br>
+          <div class="f1">
+            <label for="City">City</label>
+            <input
+              type="text"
+              name="Name"
+              id="City"
+              placeholder="Enter City Name"
+            />
+          </div>
+          <div class="f1">
+            <label for="Jobrole">Job Role</label>
+            <select name="jobrole" id="Jobrole">
+              <option value="">Select</option>
+              <option value="">FrontEnd</option>
+              <option value="">BackEnd</option>
+              <option value="">Full Stack Dev</option>
+            </select>
+          </div>
+          <div class="f1">
+            <label for="pincode">Pincode</label>
+            <input
+              type="number"
+              name="Name"
+              id="pincode"
+              placeholder="Enter 6 Digit Pin code"
+            />
+          </div>
+          <div class="f1">
+            <label for="Date">DOB</label>
+            <input type="date" name="Name" id="Date" />
+          </div>
+          <div class="f1">
+            <label for="Upload">Upload Resume</label>
+            <input type="file" name="Name" id="Upload" />
+          </div>
+        </div>
+          <span class="f2">
+            <button type="submit">Apply Now!</button>
+          </span>
+          <span class="f2">
+            <button type="reset">Reset</button>
+          </span>
+
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
